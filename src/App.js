@@ -1,9 +1,27 @@
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Home from './Pages/home/Home';
+import Topbar from './components/topbar/Topbar';
+import Sidebar from './components/sidebar/Sidebar';
+import User from './Pages/user/User';
 
 function App() {
   return (
-    <div className="App">
-      <h2>Oktio Dasboard</h2>
+    <Router>
+      <Topbar />
+      <div className="container">
+        <Sidebar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/user">
+            <User />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
