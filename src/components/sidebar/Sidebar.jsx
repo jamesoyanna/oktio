@@ -1,8 +1,7 @@
 import "./sidebar.css";
 import {
   LineStyle,
-  Timeline,
-  TrendingUp,
+ 
   PermIdentity,
   Storefront,
   AttachMoney,
@@ -11,7 +10,7 @@ import {
   DynamicFeed,
   ChatBubbleOutline,
   WorkOutline,
-  Report,
+  
 } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
@@ -20,12 +19,10 @@ export default function Sidebar() {
     <div className="sidebar">
       <div className="sidebarWrapper">
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
             <Link to="/" className="link">
-            <li className="sidebarListItem active">
-              <LineStyle className="sidebarIcon" />
-              Home
+            <li className="active">
+              <button className="btn">+</button>
             </li>
             </Link>
            
@@ -56,19 +53,7 @@ export default function Sidebar() {
           </ul>
         </div>
         <div className="sidebarMenu">
-          <ul className="sidebarList">
-            <li className="sidebarListItem">
-              <MailOutline className="sidebarIcon" />
-             
-            </li>
-            <li className="sidebarListItem">
-              <DynamicFeed className="sidebarIcon" />
-                         </li>
-            <li className="sidebarListItem">
-              <ChatBubbleOutline className="sidebarIcon" />
-             
-            </li>
-          </ul>
+          
         </div>
         <div className="sidebarMenu">
           <ul className="sidebarList">
