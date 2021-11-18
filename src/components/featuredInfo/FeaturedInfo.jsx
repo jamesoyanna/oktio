@@ -1,5 +1,6 @@
 import "./featuredInfo.css";
 import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
+import Barchart from '../common/Bartchart';
 
 export default function FeaturedInfo() {
   return (
@@ -11,6 +12,7 @@ export default function FeaturedInfo() {
           <span className="featuredMoneyRate">
             -11.4 <ArrowDownward  className="featuredIcon negative"/>
           </span>
+          <Barchart />
         </div>
       </div>
        <div className="featuredItem">
@@ -20,6 +22,7 @@ export default function FeaturedInfo() {
           <span className="featuredMoneyRate">
             -11.4 <ArrowDownward  className="featuredIcon negative"/>
           </span>
+            <Barchart />
         </div>
         
       </div>
@@ -30,6 +33,7 @@ export default function FeaturedInfo() {
           <span className="featuredMoneyRate">
             -1.4 <ArrowDownward className="featuredIcon negative"/>
           </span>
+            <Barchart />
         </div>
        
       </div>
@@ -40,6 +44,7 @@ export default function FeaturedInfo() {
           <span className="featuredMoneyRate">
             +2.4 <ArrowUpward className="featuredIcon"/>
           </span>
+          <Barchart />
         </div>
       </div>
     </div>

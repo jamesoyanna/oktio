@@ -19,8 +19,8 @@ const renderCustomizedLabel = ({
   innerRadius,
   outerRadius,
   percent,
-  index
-}: any) => {
+ 
+}) => {
   const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
   const x = cx + radius * Math.cos(-midAngle * RADIAN);
   const y = cy + radius * Math.sin(-midAngle * RADIAN);
@@ -37,13 +37,13 @@ const renderCustomizedLabel = ({
     </text>
   );
 };
-export default function App() {
+export default function Auction() {
   return (
-    <PieChart width={400} height={400}>
+    <PieChart width={190} height={200}>
       <Pie
         data={data}
-        cx={200}
-        cy={200}
+        cx={100}
+        cy={100}
         labelLine={false}
         label={renderCustomizedLabel}
         outerRadius={80}

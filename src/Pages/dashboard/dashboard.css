@@ -1,11 +1,11 @@
 .dashboard{
-    flex: 14;
-   
+
+    
 }
 
 .homeWidgets{
     display: flex;
-    margin: 20px;
-     background: #ffffff;
+    margin: 25px;
+    padding: 5px 10px;
    
 }
