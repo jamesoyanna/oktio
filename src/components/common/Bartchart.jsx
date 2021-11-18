@@ -75,9 +75,9 @@ export default function Activity() {
       
       margin={{
         top: 20,
-        right: 50,
-        left: 28,
-        bottom: 0
+        right: 90,
+        left: 30,
+        bottom: 40
       }}
       
     >

@@ -3,15 +3,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import { Box } from '@material-ui/core';
@@ -132,14 +129,7 @@ export default function PrimarySearchAppBar() {
       transformOrigin={{ vertical: 'top', horizontal: 'right' }}
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}>
-      <MenuItem>
-        <IconButton aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="secondary">
-            <MailIcon />
-          </Badge>
-        </IconButton>
-        <p>Messages</p>
-      </MenuItem>
+     
       <MenuItem>
         <IconButton aria-label="show 11 new notifications" color="inherit">
           <Badge badgeContent={11} color="secondary">
@@ -164,10 +154,10 @@ export default function PrimarySearchAppBar() {
   return (
     <Box className={classes.grow}>
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar style={{backgroundColor: "#fff"}}>
           
-          <img style={{height: "70px", width: "150px"}} src={logo} alt="logo" />
-          <Box className={classes.search}>
+          <img style={{height: "70px", width: "100px", marginLeft: 0}} src={logo} alt="logo" />
+          <Box className={classes.search} style={{color: "#999999"}}>
             <Box className={classes.searchIcon}>
               <SearchIcon />
             </Box>
@@ -181,7 +171,7 @@ export default function PrimarySearchAppBar() {
             />
           </Box>
           <Box className={classes.grow} />
-          <Box className={classes.sectionDesktop}>
+          <Box className={classes.sectionDesktop} style={{color: "#999999"}}>
             
             <IconButton aria-label="show 17 new notifications" color="inherit">
               <Badge badgeContent={17} color="secondary">
