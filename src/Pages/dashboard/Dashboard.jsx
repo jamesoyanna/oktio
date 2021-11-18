@@ -5,15 +5,20 @@ import WidgetLg from "../../components/widgetLg/WidgetLg";
 
 const Dashboard = () => {
   return (
+    <>
+ 
    <div className="dashboard">
-
+         
       <FeaturedInfo />
       <div className="homeWidgets">
         <WidgetSm/>
+         <WidgetSm/>
         <WidgetLg/>
-        <WidgetLg/>
+           
+  
       </div>
-    </div>
+    </div>   
+    </>
   );
 }
 
