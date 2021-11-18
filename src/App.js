@@ -1,10 +1,10 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Home from './Pages/home/Home';
 import Topbar from './components/topbar/Topbar';
 import Sidebar from './components/sidebar/Sidebar';
 import User from './Pages/user/User';
+import Dashboard from './Pages/dashboard/Dashboard';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Sidebar />
         <Switch>
           <Route exact path="/">
-            <Home />
+            <Dashboard />
           </Route>
           <Route path="/user">
             <User />

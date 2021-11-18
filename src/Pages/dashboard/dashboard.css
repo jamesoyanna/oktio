@@ -1,0 +1,11 @@
+.dashboard{
+    flex: 14;
+   
+}
+
+.homeWidgets{
+    display: flex;
+    margin: 20px;
+     background: #ffffff;
+   
+}
