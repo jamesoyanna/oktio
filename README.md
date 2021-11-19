@@ -17,7 +17,7 @@ This project is a Oktio super buyer and supplier dashboard for managing projects
 
 #### I am also currently doing refactoring of the application and improving more on the design and functionality. 
 
-### The application is also fully deploy and hosted on Netlify. Live view of the application Demo can be found here- [React Oktio Dashboard](https://)
+### The application is also fully deploy and hosted on Netlify. Live view of the application Demo can be found here- [React Oktio Dashboard](https://oktio-dashboard.netlify.app)
 
 ## Pictutial View of the Application
 
