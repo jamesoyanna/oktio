@@ -1,70 +1,151 @@
-# Getting Started with Create React App
+# React Calendar App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a  simple dashboard for managing shopping and ecommerce activity. 
 
-## Available Scripts
+## Application Features
+-Auction
+-Project listing.
+-Events.
 
-In the project directory, you can run:
 
-### `yarn start`
+ ### How I will improve more on this application:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##### - If giving more time and incentives for this project, I would integrate all API endpoints and ensure they work properly.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### I am also currently doing refactoring of the application and improving more on the design and functionality. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### The application is also fully deploy and hosted on Netlify. Live view of the application Demo can be found here- [React Calendar App](https://)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Pictutial View of the Application
 
-### `yarn eject`
+To create a reminder, hover on the date to access the reminder.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![front](https://user-images.githubusercontent.com/26815113/132859438-3a586ac6-e2fb-44f7-9d69-fe6d561c4163.PNG)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## How to use the application
 
-## Learn More
+## Table of Contents
+- [Getting Started](#getting-started)
+	- [Tools Required](#tools-required)
+	- [Installation](#installation)
+- [Development](#development)
+   
+- [Running the App](#running-the-app)
+- [Deployment](#deployment)
+- [Authors](#authors)
+- [License](#license)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The project has two branches: `master`, `dev`.
 
-### Code Splitting
+* `master` contains the full source code on the solution I have developed for this excercise
+* `dev` . It also contains code under  development and refactoring. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ ## Project Folder structure.
 
-### Analyzing the Bundle Size
+```
+	project-title
+	├── README.md
+	├── package.json
+	├── .gitignore
+	├── public
+	│   ├── favicon.ico
+	│   ├── index.html
+	│   └── manifest.json
+	└── src
+	      └── components
+		        ├── assets
+			     -  images
+				├──Activity
+				├──Auction
+				├──common
+				├──featuredInfo
+				├──sidebar
+				├──topbar
+				├──widgetLg
+				├──widgetSm
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+			    ├── pages
+				     ├──dashboard
+					      ├── dashboard.js
+						  ├── dashboard.css
+					 ├──user
+					     ├── user.css
+						 ├── User.js
+	      └── store
+	              └── actions
+		                ├── modals.js
+				├── reminders.js
+		      └── reducers
+		                 ├── index.js
+				 ├── modals.js
+				 ├── reminders.js
+		      ├── actionTypesjs
+		      ├── index.js
+	   └── styles
+		    ├── modal.js
+     
+		   
+		   
+	  ├── index.css
+	  ├── index.js
+	  ├── registerServiceWorker.js
+```
 
-### Making a Progressive Web App
+### Tools Required
+The following tools is required to develop and run this application:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* A text editor or an IDE (like IntelliJ)
+* Command Line
 
-### Advanced Configuration
+### Installation
+Installation steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+##Node.js and Yarn or Npm
+Your computer must have installed nodejs, and yarn to run this application You can download Node.js from https://nodejs.org and yarn from https://yarnpkg.com/lang/en/docs/install/ . NPM comes bundled with Node.js
+![nodejs](https://user-images.githubusercontent.com/26815113/132867561-bf2ec1a2-cd63-461f-95dd-e95c1c6676c7.PNG)
 
-### Deployment
+## Install Npm Packages
+You must have to install packages. You can do this by running yarn or npm install from the root of the project to install all the necessary dependencies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Development server
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Running the App
+
+  ``` 
+Run yarn start or npm stall from the root of your project to start a dev server. 
+Navigate to http://localhost:3000/. 
+The app will automatically reload if you change any of the source files.
+  ```
+
+## Deployment
+
+You can deploy the application on any server. You can make use of Netlify,a git-based workflow and powerful serverless platform to build, deploy, and collaborate on web apps. Visit [Netlify](https://www.netlify.com/)
+
+
+## Authors
+
+#### James Oyanna
+* [GitHub](https://github.com/jamesoyanna)
+* [LinkedIn](https://www.linkedin.com/in/jamesoyanna)
+
+
+`React Calculator` is open source software
+
+## Resources
+
+I made use of these `resources` during development.
+
+* [Raect Doc](https://reactjs.org/docs/getting-started.html)
+* [Styled Component](https://styled-components.com/)
+* [Redux](https://redux.js.org/)
+* [react Motion](https://www.npmjs.com/package/react-motion)
+ [Moment js](https://momentjs.com/)

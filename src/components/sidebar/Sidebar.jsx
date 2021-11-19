@@ -1,17 +1,12 @@
 import "./sidebar.css";
 import {
-  LineStyle,
- 
-  PermIdentity,
+ People,
   Storefront,
-  AttachMoney,
-  BarChart,
-  MailOutline,
-  DynamicFeed,
-  ChatBubbleOutline,
-  WorkOutline,
-  
+  HelpOutlineOutlined,
+  Settings,
+  AccountBalanceWallet
 } from "@material-ui/icons";
+
 import { Link } from "react-router-dom";
 
 export default function Sidebar() {
@@ -32,7 +27,7 @@ export default function Sidebar() {
           <ul className="sidebarList">
             <Link to="/users" className="link">
               <li className="sidebarListItem">
-                <PermIdentity className="sidebarIcon" />
+                <AccountBalanceWallet className="sidebarIcon" />
                
               </li>
             </Link>
@@ -42,12 +37,9 @@ export default function Sidebar() {
                 
               </li>
             </Link>
+           
             <li className="sidebarListItem">
-              <AttachMoney className="sidebarIcon" />
-              
-            </li>
-            <li className="sidebarListItem">
-              <BarChart className="sidebarIcon" />
+              <People className="sidebarIcon" />
               
             </li>
           </ul>
@@ -58,7 +50,12 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <ul className="sidebarList">
             <li className="sidebarListItem">
-              <WorkOutline className="sidebarIcon" />
+              <Settings className="sidebarIcon" />
+            </li>
+
+             <li className="sidebarListItem">
+              <HelpOutlineOutlined className="sidebarIcon" />
+              
             </li>
            
            
