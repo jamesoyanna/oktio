@@ -1,6 +1,6 @@
-# React Calendar App
+# React Oktio Dashboard
 
-This project is a  simple dashboard for managing shopping and ecommerce activity. 
+This project is a Oktio super buyer and supplier dashboard for managing projects. 
 
 ## Application Features
 -Auction
@@ -15,16 +15,14 @@ This project is a  simple dashboard for managing shopping and ecommerce activity
 
 
 
-
 #### I am also currently doing refactoring of the application and improving more on the design and functionality. 
 
-### The application is also fully deploy and hosted on Netlify. Live view of the application Demo can be found here- [React Calendar App](https://)
+### The application is also fully deploy and hosted on Netlify. Live view of the application Demo can be found here- [React Oktio Dashboard](https://)
 
 ## Pictutial View of the Application
 
-To create a reminder, hover on the date to access the reminder.
 
-![front](https://user-images.githubusercontent.com/26815113/132859438-3a586ac6-e2fb-44f7-9d69-fe6d561c4163.PNG)
+![front]()
 
 
 
@@ -69,7 +67,6 @@ The project has two branches: `master`, `dev`.
 				├──featuredInfo
 				├──sidebar
 				├──topbar
-				├──widgetLg
 				├──widgetSm
 
 			    ├── pages
@@ -79,20 +76,11 @@ The project has two branches: `master`, `dev`.
 					 ├──user
 					     ├── user.css
 						 ├── User.js
-	      └── store
-	              └── actions
-		                ├── modals.js
-				├── reminders.js
-		      └── reducers
-		                 ├── index.js
-				 ├── modals.js
-				 ├── reminders.js
-		      ├── actionTypesjs
-		      ├── index.js
-	   └── styles
-		    ├── modal.js
-     
-		   
+	      └── Redux
+	              └── apiCalls.js
+		          ├── projectRedux.js
+				  ├── store.js
+		          ├── userRedux.js
 		   
 	  ├── index.css
 	  ├── index.js
@@ -102,7 +90,7 @@ The project has two branches: `master`, `dev`.
 ### Tools Required
 The following tools is required to develop and run this application:
 
-* A text editor or an IDE (like IntelliJ)
+* A text editor or an IDE (like Vscode)
 * Command Line
 
 ### Installation
@@ -138,14 +126,12 @@ You can deploy the application on any server. You can make use of Netlify,a git-
 * [LinkedIn](https://www.linkedin.com/in/jamesoyanna)
 
 
-`React Calculator` is open source software
+`Oktio Dashboard` is open source software
 
 ## Resources
 
 I made use of these `resources` during development.
 
 * [Raect Doc](https://reactjs.org/docs/getting-started.html)
-* [Styled Component](https://styled-components.com/)
+* [Material Ui](https://mui.com/)
 * [Redux](https://redux.js.org/)
-* [react Motion](https://www.npmjs.com/package/react-motion)
- [Moment js](https://momentjs.com/)
